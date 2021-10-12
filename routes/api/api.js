@@ -4,7 +4,7 @@ const {
     addWorkout,
     getWorkouts,
     addExercise
-} = require("../controller/WorkoutController");
+} = require("../controllers/workoutController");
 
 router.route("/api/workouts").get(getWorkouts).post(addWorkout);
 
