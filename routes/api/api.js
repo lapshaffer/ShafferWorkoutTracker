@@ -1,5 +1,15 @@
-// api routes for
-    // viewing all workouts
-    // creating new workouts
-    // updating existing workouts
-    // creating new exercises
+const router = require("express").Router();
+
+const {
+    addWorkout,
+    getWorkouts,
+    addExercise
+} = require("../controller/WorkoutController");
+
+router.route("/api/workouts").get(getWorkouts).post(addWorkout);
+
+router.route("/api/workouts/range").get(getWorkouts);
+
+router.route("/api/workouts/:id").put(addExercise);
+
+module.exports = router;
