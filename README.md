@@ -3,6 +3,7 @@ A workout tracker, built with MongoDB and Express.js, to allow users to create, 
 
 ## Deployed Application
 https://guarded-eyrie-90178.herokuapp.com/
+*Note* At the moment, due to a disconnect between MongoDB Atlas and the functioning db, this site is not currently functional
 
 ## User Story
 
